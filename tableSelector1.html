@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+   <!-- <style>
+        .aa{
+        }
+    </style>-->
+    <script type="text/javascript" src="../js/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            console.log('ready function begin');
+            /*$('input').bind('click', function() {
+                console.log($(this).val());
+                //console.log($(this).parent().siblings(".aa").val());
+                //console.log($(this).parent().siblings().text());
+                console.log($(this).parent().siblings().children(".aa").val());
+            });*/
+            $('input').bind('keyup', function() {   
+                //console.log($(this).val());
+                var totalcomm=10000;
+                var sharePacentage=$(this).val()/totalcomm*100;
+                sharePacentage=sharePacentage.toFixed(2)
+                console.log(sharePacentage);
+                console.log($(this).parent().siblings().children(".aa").text(sharePacentage));
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <thead><tr><td>分成人</td><td>分成金额</td><td>分成比例</td><td>类选择</td></tr></thead>
+        <tr>
+            <td>分成人1</td><td><input type="number" value="3000"></td><td><span class="aa">1000</span><span>%</span></td><td><input></td>
+        </tr>
+        <tr>
+            <td>分成人2</td><td><input type="number" value="5000"><label>lable</label></td><td><input type="text" value="分成比例2" class="aa"></td><td><input></td>
+        </tr>
+        <tr>
+            <td>分成人3</td><td><input type="number" value="2000"></td><td><input type="text" value="分成比例3" class="aa"></td><td><input></td>
+        </tr>
+
+    </table>
+</body>
+</html>
