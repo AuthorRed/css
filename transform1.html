@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div{
+            width: 300px;
+            height: 300px;
+            border: #000 solid 1px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+        div img{
+            cursor: pointer;
+            transition: all 0.6s;
+        }
+        div img:hover{
+            transform: scale(1.4);
+        }
+    </style>
+    <style>
+        div#resize a:hover{position: absolute;}
+        div#resize a:hover img{width: 180px;}
+    </style>
+</head>
+<body>
+hello
+<div>
+<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2589121133,2827694956&fm=27&gp=0.jpg">
+</div>
+<div id="resize">
+    <a href="#"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2589121133,2827694956&fm=27&gp=0.jpg" border=0></a>
+</div>
+</body>
+</html>
