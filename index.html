@@ -20,83 +20,14 @@
     <script src="js/bootstrap-modal.js"></script>
 
 </head>
-
-<body>
-<h1>周寒通你最牛逼</h1>
-<!--<div  class="container">-->
-<div class="table_content" >
-    <table class="table table_blue  table-bordered table-hover " >
-        <thead >
-        <tr>
-            <th style="border: 1px solid #f3f3f4">Id</th><th>Name</th><th>Age</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>id</td><td>id</td><td align="right">name</td>
-        </tr>
-        <tr>
-            <td>id</td><td>id</td><td>id</td>
-        </tr>
-        <tr>
-            <td>id</td><td>id</td><td>id</td>
-        </tr>
-        </tbody>
-    </table>
-    <!--</div>-->
-    <a href="#" onclick= "return confirm('是否确定');">点击确定</a>
-    <!-- Indicates a successful or positive action -->
-    <button type="button" class="btn btn-success" onclick= "confirm()">（成功）Success</button>
-
-    <!-- Contextual button for informational alert messages -->
-    <button type="button" class="btn btn-info">（一般信息）Info</button>
-</div>
-<div id="myConfirm"></div>
-
-</body>
-<script type="text/javascript" language="javascript">
-
-    function confirmAct()
+<style type="text/css">
+    body
     {
-        if(confirm('确定要执行此操作吗?'))
-        {
-            return true;
-        }
-        return false;
+        background: url('http://b38.photo.store.qq.com/psu?/efa8a155-47b6-4e49-a231-cde3f546bcaf/htNNWv4Db4tE.VHdi6GRflTOxm9*oKD.DEXZpzD7DAE!/b/YWZq8BRVgwAAYrI4uhaTWQAA&a=35&b=38&bo=WAIgAwAAAAABBFo!&rf=viewer_4&t=5');
+
     }
-
-    /**
-     * 重写确认框 fun:函数对象 params:参数列表， 可以是数组
-     */
-    function confirm(fun, params) {
-        if ($("#myConfirm").length > 0) {
-            $("#myConfirm").remove();
-        }
-        var html = "<div class='modal fade' id='myConfirm' >"
-                + "<div class='modal-backdrop in' style='opacity:0; '></div>"
-                + "<div class='modal-dialog' style='z-index:2901; margin-top:60px; width:400px; '>"
-                + "<div class='modal-content'>"
-                + "<div class='modal-header'  style='font-size:16px; '>"
-                + "<span class='glyphicon glyphicon-envelope'>&nbsp;</span>信息！<button type='button' class='close' data-dismiss='modal'>"
-                + "<span style='font-size:20px;  ' class='glyphicon glyphicon-remove'></span><tton></div>"
-                + "<div class='modal-body text-center' id='myConfirmContent' style='font-size:18px; ' >"
-                + "<input id='input' type='text'>"
-                + "是否确定要删除？"
-                + "</div>"
-                + "<div class='modal-footer ' style=''>"
-                + "<button class='btn btn-danger ' id='confirmOk' >确定<tton>"
-                + "<button class='btn btn-info ' data-dismiss='modal'>取消<tton>"
-                + "</div>" + "</div></div></div>";
-        $("body").append(html);
-
-        $("#myConfirm").modal("show");
-
-        $("#confirmOk").on("click", function() {
-            $("#myConfirm").modal("hide");
-            var text=$("#input").val();
-            alert(text);
-            // fun(params); // 执行函数
-        });
-    }
-</script>
+</style>
+<body>
+<h1>号哥你最牛逼</h1>
+</body>
 </html>
